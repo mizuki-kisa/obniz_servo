@@ -1,0 +1,515 @@
+{
+    "name": "ServoTest",
+    "components": [
+        {
+            "name": "/Main",
+            "graph": {
+                "connections": [
+                    {
+                        "fromId": "1ec2cc09-bc7a-0f48-b354-734fee910539",
+                        "fromProperty": "width",
+                        "toId": "14916067-f519-a049-359b-3db7ae46f499",
+                        "toProperty": "width"
+                    },
+                    {
+                        "fromId": "1ec2cc09-bc7a-0f48-b354-734fee910539",
+                        "fromProperty": "height",
+                        "toId": "14916067-f519-a049-359b-3db7ae46f499",
+                        "toProperty": "height"
+                    },
+                    {
+                        "fromId": "3372b924-0f47-f657-e151-a6476156f547",
+                        "fromProperty": "touch.tap",
+                        "toId": "d95ba96a-e917-bfbe-6e87-08fb115dde6e",
+                        "toProperty": "to-Forward"
+                    },
+                    {
+                        "fromId": "d51dcda6-5fee-23dc-a159-a63181cb5290",
+                        "fromProperty": "touch.tap",
+                        "toId": "d95ba96a-e917-bfbe-6e87-08fb115dde6e",
+                        "toProperty": "to-Reverse"
+                    },
+                    {
+                        "fromId": "14916067-f519-a049-359b-3db7ae46f499",
+                        "fromProperty": "touch.tap",
+                        "toId": "d95ba96a-e917-bfbe-6e87-08fb115dde6e",
+                        "toProperty": "to-Stop"
+                    },
+                    {
+                        "fromId": "d95ba96a-e917-bfbe-6e87-08fb115dde6e",
+                        "fromProperty": "switch",
+                        "toId": "df9e124f-33b3-0187-4255-3c53eabb5986",
+                        "toProperty": "index"
+                    },
+                    {
+                        "fromId": "df9e124f-33b3-0187-4255-3c53eabb5986",
+                        "fromProperty": "currentValue",
+                        "toId": "40c33c6a-361e-fddd-abb2-8d353bd6c961",
+                        "toProperty": "message"
+                    }
+                ],
+                "roots": [
+                    {
+                        "id": "2d3ccd33-f1ef-2dc5-3e1a-ca9d61cd222b",
+                        "type": "Group",
+                        "label": "Root",
+                        "x": 196.7699494749554,
+                        "y": 267.8136287083266,
+                        "parameters": {
+                            "fill": "parent"
+                        },
+                        "ports": [],
+                        "dynamicports": [],
+                        "children": [
+                            {
+                                "id": "fa90ea16-1232-0437-deea-5dd6263d8247",
+                                "type": "Rectangle",
+                                "label": "Background",
+                                "x": 20,
+                                "y": 97,
+                                "parameters": {
+                                    "color": "#FFFB00"
+                                },
+                                "ports": [],
+                                "dynamicports": [],
+                                "children": []
+                            },
+                            {
+                                "id": "00b24493-dabe-9ce9-3eab-6a50d03797a0",
+                                "type": "Group",
+                                "version": 2,
+                                "x": 20,
+                                "y": 122,
+                                "parameters": {
+                                    "padding": 100,
+                                    "sizeMode": "childHeight",
+                                    "alignY": "center"
+                                },
+                                "ports": [],
+                                "dynamicports": [],
+                                "children": [
+                                    {
+                                        "id": "d51dcda6-5fee-23dc-a159-a63181cb5290",
+                                        "type": "Image",
+                                        "version": 2,
+                                        "x": 20,
+                                        "y": 46,
+                                        "parameters": {
+                                            "image": "btn.png",
+                                            "color": "#222222",
+                                            "rotationZ": 180,
+                                            "alignY": "center"
+                                        },
+                                        "ports": [],
+                                        "dynamicports": [],
+                                        "children": []
+                                    },
+                                    {
+                                        "id": "3372b924-0f47-f657-e151-a6476156f547",
+                                        "type": "Image",
+                                        "version": 2,
+                                        "x": 20,
+                                        "y": 107,
+                                        "parameters": {
+                                            "image": "btn.png",
+                                            "color": "#222222",
+                                            "alignX": "right",
+                                            "alignY": "center"
+                                        },
+                                        "ports": [],
+                                        "dynamicports": [],
+                                        "children": []
+                                    },
+                                    {
+                                        "id": "14916067-f519-a049-359b-3db7ae46f499",
+                                        "type": "Group",
+                                        "version": 2,
+                                        "x": 20,
+                                        "y": 204,
+                                        "parameters": {
+                                            "width": {
+                                                "value": 100,
+                                                "unit": "px"
+                                            },
+                                            "height": {
+                                                "value": 100,
+                                                "unit": "px"
+                                            },
+                                            "alignX": "center",
+                                            "alignY": "center"
+                                        },
+                                        "ports": [],
+                                        "dynamicports": [],
+                                        "children": [
+                                            {
+                                                "id": "1ec2cc09-bc7a-0f48-b354-734fee910539",
+                                                "type": "Circle",
+                                                "x": 20,
+                                                "y": 102,
+                                                "parameters": {
+                                                    "width": {
+                                                        "value": 360,
+                                                        "unit": "px"
+                                                    },
+                                                    "color": "#FF0569"
+                                                },
+                                                "ports": [],
+                                                "dynamicports": [],
+                                                "children": []
+                                            },
+                                            {
+                                                "id": "b421e906-9a3d-316a-5c61-a2296c72a89e",
+                                                "type": "Text",
+                                                "version": 2,
+                                                "x": 20,
+                                                "y": 204,
+                                                "parameters": {
+                                                    "alignX": "center",
+                                                    "alignY": "center",
+                                                    "text": "STOP",
+                                                    "fontSize": 100,
+                                                    "color": "#ffffff"
+                                                },
+                                                "ports": [],
+                                                "dynamicports": [],
+                                                "children": []
+                                            }
+                                        ]
+                                    }
+                                ]
+                            }
+                        ]
+                    },
+                    {
+                        "id": "40c33c6a-361e-fddd-abb2-8d353bd6c961",
+                        "type": "Send Message",
+                        "x": 832.2659901896235,
+                        "y": 473.1270218996017,
+                        "parameters": {
+                            "topic": "/servo/noodl",
+                            "publishOnInputsChanged": true
+                        },
+                        "ports": [
+                            {
+                                "name": "message",
+                                "plug": "input",
+                                "type": {
+                                    "name": "*",
+                                    "allowConnectionOnly": true
+                                },
+                                "group": "Payload",
+                                "index": 1
+                            }
+                        ],
+                        "dynamicports": [],
+                        "children": []
+                    },
+                    {
+                        "id": "d95ba96a-e917-bfbe-6e87-08fb115dde6e",
+                        "type": "States",
+                        "x": 457.26684109334224,
+                        "y": 455.9647247978305,
+                        "parameters": {
+                            "states": "Stop,Forward,Reverse",
+                            "values": "switch",
+                            "duration-Stop": 0,
+                            "value-Stop-switch": 0,
+                            "duration-Forward": 0,
+                            "value-Forward-switch": 1,
+                            "duration-Reverse": 0,
+                            "value-Reverse-switch": 2
+                        },
+                        "ports": [],
+                        "dynamicports": [
+                            {
+                                "type": {
+                                    "name": "number",
+                                    "allowConnectionsOnly": true
+                                },
+                                "plug": "output",
+                                "group": "Values",
+                                "name": "switch",
+                                "index": 6
+                            },
+                            {
+                                "plug": "input",
+                                "type": "number",
+                                "group": "Stop Values",
+                                "name": "value-Stop-switch",
+                                "displayName": "switch",
+                                "editorName": "Stop|switch",
+                                "index": 7
+                            },
+                            {
+                                "plug": "input",
+                                "type": {
+                                    "name": "enum",
+                                    "enums": [
+                                        {
+                                            "value": "easeOut",
+                                            "label": "Ease Out"
+                                        },
+                                        {
+                                            "value": "easeIn",
+                                            "label": "Ease In"
+                                        },
+                                        {
+                                            "value": "linear",
+                                            "label": "Linear"
+                                        },
+                                        {
+                                            "value": "easeInOut",
+                                            "label": "Ease In Out"
+                                        },
+                                        {
+                                            "value": "cubicBezier",
+                                            "label": "Cubic Bezier"
+                                        }
+                                    ]
+                                },
+                                "default": "easeOut",
+                                "displayName": "Easing Curve",
+                                "group": "Stop Transition",
+                                "name": "transition-Stop",
+                                "index": 8
+                            },
+                            {
+                                "plug": "input",
+                                "type": "number",
+                                "default": 300,
+                                "displayName": "Duration",
+                                "group": "Stop Transition",
+                                "name": "duration-Stop",
+                                "index": 9
+                            },
+                            {
+                                "plug": "input",
+                                "type": {
+                                    "name": "boolean",
+                                    "allowConnectionsOnly": true
+                                },
+                                "displayName": "To Stop",
+                                "name": "to-Stop",
+                                "group": "Go to state",
+                                "index": 10
+                            },
+                            {
+                                "plug": "output",
+                                "type": "boolean",
+                                "displayName": "At Stop",
+                                "name": "at-Stop",
+                                "group": "Current state",
+                                "index": 11
+                            },
+                            {
+                                "plug": "output",
+                                "type": "signal",
+                                "displayName": "Has Reached Stop",
+                                "name": "reached-Stop",
+                                "group": "Current state",
+                                "index": 12
+                            },
+                            {
+                                "plug": "input",
+                                "type": "number",
+                                "group": "Forward Values",
+                                "name": "value-Forward-switch",
+                                "displayName": "switch",
+                                "editorName": "Forward|switch",
+                                "index": 13
+                            },
+                            {
+                                "plug": "input",
+                                "type": {
+                                    "name": "enum",
+                                    "enums": [
+                                        {
+                                            "value": "easeOut",
+                                            "label": "Ease Out"
+                                        },
+                                        {
+                                            "value": "easeIn",
+                                            "label": "Ease In"
+                                        },
+                                        {
+                                            "value": "linear",
+                                            "label": "Linear"
+                                        },
+                                        {
+                                            "value": "easeInOut",
+                                            "label": "Ease In Out"
+                                        },
+                                        {
+                                            "value": "cubicBezier",
+                                            "label": "Cubic Bezier"
+                                        }
+                                    ]
+                                },
+                                "default": "easeOut",
+                                "displayName": "Easing Curve",
+                                "group": "Forward Transition",
+                                "name": "transition-Forward",
+                                "index": 14
+                            },
+                            {
+                                "plug": "input",
+                                "type": "number",
+                                "default": 300,
+                                "displayName": "Duration",
+                                "group": "Forward Transition",
+                                "name": "duration-Forward",
+                                "index": 15
+                            },
+                            {
+                                "plug": "input",
+                                "type": {
+                                    "name": "boolean",
+                                    "allowConnectionsOnly": true
+                                },
+                                "displayName": "To Forward",
+                                "name": "to-Forward",
+                                "group": "Go to state",
+                                "index": 16
+                            },
+                            {
+                                "plug": "output",
+                                "type": "boolean",
+                                "displayName": "At Forward",
+                                "name": "at-Forward",
+                                "group": "Current state",
+                                "index": 17
+                            },
+                            {
+                                "plug": "output",
+                                "type": "signal",
+                                "displayName": "Has Reached Forward",
+                                "name": "reached-Forward",
+                                "group": "Current state",
+                                "index": 18
+                            },
+                            {
+                                "plug": "input",
+                                "type": "number",
+                                "group": "Reverse Values",
+                                "name": "value-Reverse-switch",
+                                "displayName": "switch",
+                                "editorName": "Reverse|switch",
+                                "index": 19
+                            },
+                            {
+                                "plug": "input",
+                                "type": {
+                                    "name": "enum",
+                                    "enums": [
+                                        {
+                                            "value": "easeOut",
+                                            "label": "Ease Out"
+                                        },
+                                        {
+                                            "value": "easeIn",
+                                            "label": "Ease In"
+                                        },
+                                        {
+                                            "value": "linear",
+                                            "label": "Linear"
+                                        },
+                                        {
+                                            "value": "easeInOut",
+                                            "label": "Ease In Out"
+                                        },
+                                        {
+                                            "value": "cubicBezier",
+                                            "label": "Cubic Bezier"
+                                        }
+                                    ]
+                                },
+                                "default": "easeOut",
+                                "displayName": "Easing Curve",
+                                "group": "Reverse Transition",
+                                "name": "transition-Reverse",
+                                "index": 20
+                            },
+                            {
+                                "plug": "input",
+                                "type": "number",
+                                "default": 300,
+                                "displayName": "Duration",
+                                "group": "Reverse Transition",
+                                "name": "duration-Reverse",
+                                "index": 21
+                            },
+                            {
+                                "plug": "input",
+                                "type": {
+                                    "name": "boolean",
+                                    "allowConnectionsOnly": true
+                                },
+                                "displayName": "To Reverse",
+                                "name": "to-Reverse",
+                                "group": "Go to state",
+                                "index": 22
+                            },
+                            {
+                                "plug": "output",
+                                "type": "boolean",
+                                "displayName": "At Reverse",
+                                "name": "at-Reverse",
+                                "group": "Current state",
+                                "index": 23
+                            },
+                            {
+                                "plug": "output",
+                                "type": "signal",
+                                "displayName": "Has Reached Reverse",
+                                "name": "reached-Reverse",
+                                "group": "Current state",
+                                "index": 24
+                            },
+                            {
+                                "plug": "input",
+                                "type": {
+                                    "name": "enum",
+                                    "enums": [
+                                        "Stop",
+                                        "Forward",
+                                        "Reverse"
+                                    ]
+                                },
+                                "group": "States",
+                                "displayName": "Start at",
+                                "name": "startState",
+                                "default": "Stop",
+                                "index": 25
+                            }
+                        ],
+                        "children": []
+                    },
+                    {
+                        "id": "df9e124f-33b3-0187-4255-3c53eabb5986",
+                        "type": "String Selector",
+                        "x": 642.2084624248781,
+                        "y": 473.3349323262065,
+                        "parameters": {
+                            "input 0": "stop",
+                            "input 1": "forward",
+                            "input 2": "reverse"
+                        },
+                        "ports": [],
+                        "dynamicports": [],
+                        "children": []
+                    }
+                ]
+            }
+        }
+    ],
+    "settings": {
+        "devices": "Default Device",
+        "Default Device.fillMode": "aspectFit",
+        "Default Device.canvasWidth": 1080,
+        "Default Device.canvasHeight": 1920,
+        "mqttUseExternalBroker": true,
+        "mqttBrokerUrl": "mqtt://343e0f71:1d8107b74e3ffd8f@broker.shiftr.io"
+    },
+    "rootNodeId": "2d3ccd33-f1ef-2dc5-3e1a-ca9d61cd222b",
+    "version": "1"
+}
